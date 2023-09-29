@@ -1,0 +1,95 @@
+1. For the give JSON data iterate over all for loops(for, for in, for of, forEach).
+
+// Sample JSON data representing a list of products
+const productsData = [
+  {
+    "id": 1,
+    "name": "Product A",
+    "price": 29.99,
+    "category": "Electronics"
+  },
+  {
+    "id": 2,
+    "name": "Product B",
+    "price": 19.99,
+    "category": "Clothing"
+  },
+  {
+    "id": 3,
+    "name": "Product C",
+    "price": 9.99,
+    "category": "Books"
+  }
+];
+
+
+
+// Using for loop to iterate over the array
+console.log("Using for loop:");
+for (let i = 0; i < productsData.length; i++) {
+  console.log(productsData[i]);
+}
+
+
+
+
+// Using for...in loop to iterate over object properties (not recommended for arrays)
+console.log("\nUsing for...in loop:");
+for (const key in productsData) {
+  console.log(productsData[key]);
+}
+
+
+
+
+// Using for...of loop to iterate over the array
+console.log("\nUsing for...of loop:");
+for (const product of productsData) {
+  console.log(product);
+}
+
+
+
+// Using forEach loop to iterate over the array
+console.log("\nUsing forEach loop:");
+productsData.forEach(product => {
+  console.log(product);
+});
+
+
+
+
+
+
+
+2. Create your own resume data in JSON format.
+
+
+{
+  "name": "Deepak",
+  "title": "MERN Full Stack Developer",
+  "contact": {
+    "email": "deepakkundrathur@gmail.com",
+    "phone": "9384650440"
+  },
+  "summary": "Aspiring MERN Stack Developer with a strong passion for web development and a self-taught expertise in MERN technologies. Eager to kickstart a career in Full Stack Web Development and apply my hands-on experience in building responsive and interactive web applications. I've honed my skills through dedicated self-study, online courses, and personal projects, demonstrating a keen ability to grasp complex concepts and a commitment to staying current with the latest trends in web development. I bring a fresh perspective, a strong work ethic, and a determination to thrive in a dynamic development environment.",
+  "education": [
+    {
+      "degree": "Bachelor of Commerce",
+      "school": "University of Madras",
+      "graduation year": "2019"
+    }
+  ],
+  "skills": [
+    "JavaScript (ES6+)",
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "HTML5/CSS3",
+    "RESTful API Development",
+    "Git/GitHub",
+    "Responsive Web Design",
+    "Problem Solving"
+  ]
+}
